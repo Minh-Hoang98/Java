@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+    <field name="username">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>Username is required!</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="trim">true</param>
+            <param name="minLength">6</param>
+            <param name="maxLength">30</param>
+            <message>Username must have 6 - 30 chars</message>
+        </field-validator>
+    </field>
+    <field name="password">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>Password is required!</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="trim">true</param>
+            <param name="minLength">6</param>
+            <param name="maxLength">20</param>
+            <message>Password must have 6 - 20 chars</message>
+        </field-validator>
+    </field>
+    <field name="fullName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>Full name is required!</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="trim">true</param>
+            <param name="minLength">2</param>
+            <param name="maxLength">50</param>
+            <message>Full name must have 2 - 50 chars</message>
+        </field-validator>
+    </field>
+    <field name="confirm">
+        <field-validator type="fieldexpression">
+            <param name="expression">confirm==password</param>
+            <message>Confirm must match password!</message>
+        </field-validator>
+    </field>
+</validators>

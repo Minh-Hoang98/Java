@@ -1,0 +1,45 @@
+SMAP
+list_jsp.java
+JSP
+*S JSP
+*F
++ 0 list.jsp
+list.jsp
++ 1 header.jsp
+includes/header.jsp
++ 2 column_left_home.jsp
+includes/column_left_home.jsp
++ 3 column_right_news.jsp
+includes/column_right_news.jsp
++ 4 footer.jsp
+includes/footer.jsp
+*L
+1:71
+1#1,12:72
+12:83,2
+13,18:85
+2#0:103
+1#2,12:104
+3#0,12:116
+14:188,5
+14,13:130
+26:206,14
+27:220
+27:245,14
+28,3:259
+30:307,5
+30,4:264
+33:325,5
+33,4:270
+36:343,5
+36,5:276
+40:361,5
+40,4:283
+43,2:223
+44,7:145
+1#3,10:151
+50#0:161
+1#4:162
+2:163,3
+3,4:166
+*E

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Strut2Config">
+    <Resource
+        name="SE1306"
+        type="javax.sql.DataSource"
+        auth="Container"
+        driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        url="jdbc:sqlserver://Mr_Css:1433;databaseName=Strut2"
+        username="se1305"
+        password="abcd"
+    />
+</Context>

@@ -1,0 +1,30 @@
+SMAP
+sinfo_jsp.java
+JSP
+*S JSP
+*F
++ 0 sinfo.jsp
+sinfo.jsp
++ 1 header.jsp
+includes/header.jsp
++ 2 column_left_home.jsp
+includes/column_left_home.jsp
++ 3 column_right_news.jsp
+includes/column_right_news.jsp
++ 4 footer.jsp
+includes/footer.jsp
+*L
+1:52
+1#1,12:53
+12:64,2
+13,18:66
+2#0:84
+1#2,20:85
+3#0,16:105
+1#3,10:120
+18#0:130
+1#4:131
+2:132,3
+3,4:135
+19#0:139
+*E

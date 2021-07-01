@@ -1,0 +1,36 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">             
+        <action name="tryAgain">
+            <result>login.jsp</result>
+        </action>
+        <action name="login" class="control.LoginAction">
+            <result name="success">index.jsp</result>
+            <result name="fail">invalid.jsp</result>
+        </action>
+        <action name="list" class="control.ListProductAction">
+            <result name="success">list.jsp</result>              
+        </action>
+        <action name="usersearch" class="control.SearchAction">
+            <result name="success">usersearch.jsp</result>
+            <result name="fail" type="redirect">login.html</result>
+            <result name="input">usersearch.jsp</result>
+        </action>      
+         <action name="addToCart" class="control.AddProductToCart">
+            <result name="success" type="redirect">list</result>                              
+          <action name="logout" class="controller.LoginAction" method="logout">
+            <result name="success">/logout.jsp</result>
+        </action>
+          <action name="viewCart" class="control.ViewCart">
+            <result name="success">viewcart.jsp</result> 
+               <result name="login">index.jsp</result>              
+        </action>
+          <action name="confirm" class="control.ConfirmAction">
+            <result name="success" type="redirect">list</result>            
+        </action> 
+    </package>
+</struts>

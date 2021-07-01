@@ -1,0 +1,6 @@
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\bin\Debug\QuanLyDocGia.exe.config
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\bin\Debug\QuanLyDocGia.exe
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\bin\Debug\QuanLyDocGia.pdb
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\obj\Debug\QuanLyDocGia.csprojResolveAssemblyReference.cache
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\obj\Debug\QuanLyDocGia.exe
+C:\Users\NguyenVietNamSon\Desktop\OOP sang thu 6(15-5)\Quan Ly Doc Gia\QuanLyDocGia\obj\Debug\QuanLyDocGia.pdb

@@ -1,0 +1,85 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="">
+            <result>login.html</result>
+        </action>
+        
+        <action name="try">
+            <result type="redirect">login.html</result>
+        </action>
+        
+        <action name="login" class="workshop.actions.LoginAction" method="checkLogin">
+            <result name="user">usersearch.jsp</result>
+            <result name="staff">staffsearch.jsp</result>
+            <result name="fail" type="redirect">invalid.html</result>
+        </action>
+        
+        <action name="usersearch" class="workshop.actions.SearchUserAction">
+            <result name="success">usersearch.jsp</result>
+            <result name="fail" type="redirect">login.html</result>
+            <result name="input">usersearch.jsp</result>
+        </action>
+        
+        <action name="staffsearch" class="workshop.actions.SearchAdminAction">
+            <result name="success">staffsearch.jsp</result>
+            <result name="fail" type="redirect" >login.html</result>
+        </action>
+        <action name="delete" class="workshop.actions.DeleteAction">
+            <result type="redirectAction">
+                <param name="actionName">staffsearch</param>
+                <param name="searchValue">${lastSearchValue}</param>
+            </result>
+            <result name="fail" type="redirect" >login.html</result>
+        </action>
+        <action name="update" class="workshop.actions.UpdateAction">
+            <result type="redirectAction">
+                <param name="actionName">listAll</param>
+                <param name="searchValue">${lastSearchValue}</param>
+            </result>
+            <result name="fail" type="redirect" >login.html</result>
+        </action>
+        <action name="logout" class="workshop.actions.LogoutAction" method="LogOut" >
+            <result  type="redirect">login.html</result>
+        </action>
+        <action name="addtocart" class="workshop.actions.AddToCartAction">
+            <result type="redirectAction" >
+                <param name="actionName">usersearch</param>
+                <param name="fromprice">${fromprice}</param>
+                <param name="toprice">${toprice}</param>
+            </result>
+            <result name="fail" type="redirect" >login.html</result>
+        </action>
+        <action name="createnewmobile" class="workshop.actions.CreateNewMobileAction">
+            <exception-mapping exception="java.sql.SQLException" result="input"></exception-mapping>
+            <result>staffsearch.jsp</result>
+            <result name="fail" type="redirect">login.html</result>
+            <result name="input">createnewmobile.jsp</result>
+        </action>
+        <action name="create" class="workshop.actions.CreateAction">
+            <result>createnewmobile.html</result>
+            <result name="fail" type="redirect">login.html</result>
+        </action>
+        <action name="viewcart" class="workshop.actions.ViewCartAction">
+            <result>viewcart.jsp</result>
+            <result name="fail" type="redirect">login.html</result>
+        </action>
+        
+        <action name="remove" class="workshop.actions.RemoveFromCartAction">
+            <result>viewcart.jsp</result>
+            <result name="fail" type="redirect">viewcart.jsp</result>
+        </action>
+        <action name="backsearchpage" class="workshop.actions.BackToSearchAction">
+            <result type="redirectAction">
+                <param name="actionName">usersearch</param>
+                <param name="fromprice">${fromprice}</param>
+                <param name="toprice">${toprice}</param>
+            </result>
+            <result name="fail" type="redirect">login.html</result>
+        </action>
+    </package>
+</struts>

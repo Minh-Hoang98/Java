@@ -1,0 +1,32 @@
+SMAP
+staff_jsp.java
+JSP
+*S JSP
+*F
++ 0 staff.jsp
+staff.jsp
++ 1 header.jsp
+includes/header.jsp
++ 2 column_left_admin.jsp
+includes/column_left_admin.jsp
++ 3 column_right_news.jsp
+includes/column_right_news.jsp
++ 4 footer.jsp
+includes/footer.jsp
+*L
+1:55
+1#1,10:56
+11:66,3
+12,8:69
+2#0:77
+1#2,8:78
+3#0,8:86
+10:144,4
+10,10:96
+1#3,12:105
+19#0:117
+1#4:118
+2:119,3
+3,4:122
+20#0:126
+*E
